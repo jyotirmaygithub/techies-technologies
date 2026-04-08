@@ -1,0 +1,76 @@
+import React, { useState, useEffect } from 'react';
+import './App.css';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import LogoTicker from './components/LogoTicker';
+import Services from './components/Services';
+import Industries from './components/Industries';
+import Outstaffing from './components/Outstaffing';
+import Features from './components/Features';
+import Process from './components/Process';
+import Testimonials from './components/Testimonials';
+import CTA from './components/CTA';
+import Footer from './components/Footer';
+import LeadPopup from './components/LeadPopup';
+import ContactSidebar from './components/ContactSidebar';
+import WhatsAppButton from './components/WhatsAppButton';
+
+function App() {
+  const [showPopup, setShowPopup] = useState(false);
+  const [showSidebar, setShowSidebar] = useState(false);
+
+  useEffect(() => {
+    // LeadPopup: Still automatic after 40 seconds
+    const isDismissed = sessionStorage.getItem('leadPopupDismissed');
+
+    if (!isDismissed) {
+      const timer = setTimeout(() => {
+        // Only show centered popup if sidebar isn't currently open
+        if (!showSidebar) {
+          setShowPopup(true);
+        }
+      }, 40000); // 40 seconds
+
+      return () => clearTimeout(timer);
+    }
+  }, [showSidebar]);
+
+  const handleOpenSidebar = (e) => {
+    if (e) e.preventDefault();
+    setShowSidebar(true);
+    setShowPopup(false); // Close centered popup if user clicks manually
+  };
+
+  const handleCloseSidebar = () => {
+    setShowSidebar(false);
+  };
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+    sessionStorage.setItem('leadPopupDismissed', 'true');
+  };
+
+  return (
+    <div className="app">
+      <Navbar onOpenPopup={handleOpenSidebar} />
+      <main>
+        <Hero onOpenPopup={handleOpenSidebar} />
+        <LogoTicker />
+        <Services />
+        <Industries />
+        <Outstaffing />
+        <Features />
+        <Process />
+        <Testimonials />
+        <CTA onOpenPopup={handleOpenSidebar} />
+      </main>
+      <Footer />
+
+      <WhatsAppButton />
+      <ContactSidebar isOpen={showSidebar} onClose={handleCloseSidebar} />
+      {showPopup && <LeadPopup onClose={handleClosePopup} />}
+    </div>
+  );
+}
+
+export default App;

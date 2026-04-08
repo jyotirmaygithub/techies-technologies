@@ -1,0 +1,77 @@
+/* ========================================
+   Process Section Styles — 1-2-3 Model
+   ======================================== */
+
+.process {
+  background-color: var(--bg-primary);
+}
+
+.process__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.process__steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-2xl);
+  margin-top: var(--space-4xl);
+}
+
+/* Individual Step */
+.process-step {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.process-step__number {
+  font-size: 5rem;
+  font-weight: 900;
+  line-height: 1;
+  color: #f4f6f8; /* Very subtle number */
+  transition: var(--transition-base);
+}
+
+.process-step:hover .process-step__number {
+  color: var(--accent-blue);
+  transform: translateY(-5px);
+}
+
+.process-step__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.process-step__title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: var(--ls-tight);
+  color: var(--text-primary);
+  margin-bottom: var(--space-md);
+}
+
+.process-step__text {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--space-xl);
+}
+
+.process-step__badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent-blue);
+  background: #eef6ff;
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  display: inline-block;
+  align-self: flex-start;
+}
+
+@media (max-width: 900px) {
+  .process__steps {
+    grid-template-columns: 1fr;
+    gap: var(--space-4xl);
+  }
+}

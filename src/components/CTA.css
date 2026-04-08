@@ -1,0 +1,127 @@
+/* ========================================
+   CTA Section
+   ======================================== */
+
+.cta {
+  padding: var(--space-5xl) var(--space-lg);
+  background: var(--bg-primary);
+}
+
+.cta__container {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  padding: var(--space-4xl) var(--space-2xl);
+  border-radius: var(--radius-2xl);
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-primary);
+  overflow: hidden;
+}
+
+.cta__glow {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 400px;
+  background: radial-gradient(ellipse, rgba(0, 112, 243, 0.15) 0%, rgba(121, 40, 202, 0.08) 40%, transparent 70%);
+  pointer-events: none;
+}
+
+.cta__content {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.cta__title {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: var(--space-md);
+  background: linear-gradient(135deg, #111 0%, #666 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.cta__subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 540px;
+  margin: 0 auto var(--space-xl);
+}
+
+.cta__actions {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+  margin-bottom: var(--space-lg);
+}
+
+.cta__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 14px 28px;
+  border-radius: var(--radius-full);
+  transition: var(--transition-base);
+}
+
+.cta__btn--primary {
+  background: var(--accent-blue);
+  color: #fff;
+}
+
+.cta__btn--primary:hover {
+  background: #1a85ff;
+  box-shadow: var(--shadow-glow-blue);
+  transform: translateY(-2px);
+}
+
+.cta__btn--primary svg {
+  transition: var(--transition-fast);
+}
+
+.cta__btn--primary:hover svg {
+  transform: translateX(3px);
+}
+
+.cta__btn--secondary {
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-primary);
+}
+
+.cta__btn--secondary:hover {
+  color: var(--text-primary);
+  border-color: var(--border-hover);
+  background: var(--bg-glass);
+}
+
+.cta__note {
+  font-size: 0.78rem;
+  color: var(--text-tertiary);
+}
+
+@media (max-width: 640px) {
+  .cta__container {
+    padding: var(--space-2xl) var(--space-lg);
+  }
+
+  .cta__actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta__btn {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+  }
+}

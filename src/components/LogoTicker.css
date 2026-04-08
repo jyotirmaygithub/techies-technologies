@@ -1,0 +1,53 @@
+/* ========================================
+   Logo Ticker
+   ======================================== */
+
+.ticker {
+  padding: var(--space-3xl) var(--space-lg);
+  border-top: 1px solid var(--border-primary);
+  border-bottom: 1px solid var(--border-primary);
+  overflow: hidden;
+}
+
+.ticker__label {
+  text-align: center;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-tertiary);
+  font-weight: 500;
+  margin-bottom: var(--space-xl);
+}
+
+.ticker__wrapper {
+  mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  overflow: hidden;
+}
+
+.ticker__track {
+  display: flex;
+  gap: var(--space-3xl);
+  animation: tickerScroll 30s linear infinite;
+  width: max-content;
+}
+
+.ticker__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  white-space: nowrap;
+  transition: var(--transition-fast);
+}
+
+.ticker__item:hover {
+  color: var(--text-secondary);
+}
+
+@keyframes tickerScroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
