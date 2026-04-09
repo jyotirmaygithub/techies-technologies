@@ -3,12 +3,12 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import LogoTicker from './components/LogoTicker';
-import Services from './components/Services';
-import Industries from './components/Industries';
-import Outstaffing from './components/Outstaffing';
-import Features from './components/Features';
-import Process from './components/Process';
-import Testimonials from './components/Testimonials';
+import Problem from './components/Problem';
+import Solution from './components/Solution';
+import Stats from './components/Stats';
+import UseCases from './components/UseCases';
+import Partners from './components/Partners';
+import Contact from './components/Contact';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
 import LeadPopup from './components/LeadPopup';
@@ -56,12 +56,12 @@ function App() {
       <main>
         <Hero onOpenPopup={handleOpenSidebar} />
         <LogoTicker />
-        <Services />
-        <Industries />
-        <Outstaffing />
-        <Features />
-        <Process />
-        <Testimonials />
+        <Problem />
+        <Solution />
+        <Stats />
+        <UseCases />
+        <Partners />
+        <Contact />
         <CTA onOpenPopup={handleOpenSidebar} />
       </main>
       <Footer />

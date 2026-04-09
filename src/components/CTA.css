@@ -3,7 +3,10 @@
    ======================================== */
 
 .cta {
-  padding: var(--space-5xl) var(--space-lg);
+  padding-top: var(--space-4xl);
+  padding-bottom: var(--space-5xl);
+  padding-left: var(--space-lg);
+  padding-right: var(--space-lg);
   background: var(--bg-primary);
 }
 
@@ -25,7 +28,12 @@
   transform: translateX(-50%);
   width: 600px;
   height: 400px;
-  background: radial-gradient(ellipse, rgba(0, 112, 243, 0.15) 0%, rgba(121, 40, 202, 0.08) 40%, transparent 70%);
+  background: radial-gradient(
+    ellipse,
+    rgba(0, 112, 243, 0.15) 0%,
+    rgba(121, 40, 202, 0.08) 40%,
+    transparent 70%
+  );
   pointer-events: none;
 }
 
@@ -74,14 +82,14 @@
 }
 
 .cta__btn--primary {
-  background: var(--accent-blue);
+  background: #000;
   color: #fff;
 }
 
 .cta__btn--primary:hover {
-  background: #1a85ff;
-  box-shadow: var(--shadow-glow-blue);
+  background: #333;
   transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .cta__btn--primary svg {

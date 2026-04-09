@@ -1,0 +1,81 @@
+/* ========================================
+   Use Cases Section
+   ======================================== */
+
+   .use-cases-section {
+    background-color: var(--bg-primary);
+  }
+  
+  .use-cases__container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .use-cases__header {
+    text-align: center;
+    margin-bottom: var(--space-4xl);
+  }
+  
+  .use-cases__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+  
+  @media (min-width: 640px) {
+    .use-cases__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .use-case-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: var(--transition-base);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .use-case-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+    border-color: var(--text-primary);
+  }
+  
+  /* Placeholder for the image. User will add background images or <img> tags here */
+  .use-case-card__image-container {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-tertiary);
+    font-size: 0.875rem;
+    font-family: monospace;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .use-case-card__image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .use-case-card__content {
+    padding: var(--space-xl);
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .use-case-card__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+  }

@@ -14,18 +14,16 @@ const Hero = ({ onOpenPopup }) => {
         </div>
 
         <h1 className="hero__title" id="hero-title">
-          <span className="hero__title-line">Visionary thinkers.</span>
-          <span className="hero__title-line">Skilled creators.</span>
-          <span className="hero__title-line">Exceptional solutions.</span>
+          <span className="hero__title-line">Design. Develop. Scale.</span>
         </h1>
 
         <p className="hero__subtitle" id="hero-subtitle">
-          We are a team committed to supporting business enthusiasts globally with exceptional UI/UX design, web, and mobile app development.
+          We design and develop systems that streamline operations, reduce manual work, and help businesses scale.
         </p>
 
         <div className="hero__actions" id="hero-actions">
           <button onClick={onOpenPopup} className="hero__btn hero__btn--primary">
-            <span>Become a Partner</span>
+            <span>Book a Free Call</span>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>

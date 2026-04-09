@@ -64,7 +64,7 @@ const Services = () => {
   }, []);
 
   return (
-    <section className="services section--alt" id="services" ref={sectionRef}>
+    <section className="services section section--alt" id="services" ref={sectionRef}>
       <div className="services__container">
         <div className="services__header">
           <span className="section-tag">Managed Services</span>

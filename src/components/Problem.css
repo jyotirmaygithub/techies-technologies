@@ -1,0 +1,92 @@
+/* ========================================
+   Problem Section — Agency Differentiation
+   ======================================== */
+
+.problem-section {
+  background-color: var(--bg-primary);
+}
+
+.problem__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.problem__header {
+  text-align: center;
+  margin-bottom: var(--space-4xl);
+}
+
+.problem__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+}
+
+@media (min-width: 768px) {
+  .problem__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2xl);
+  }
+}
+
+/* Left Column - Business Problems */
+.problem-card--client {
+  background: var(--bg-card);
+  padding: var(--space-2xl);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Right Column - Agency Failure (Contrasting) */
+.problem-card--agency {
+  background: var(--bg-secondary);
+  padding: var(--space-2xl);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.problem-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.problem-list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.problem-list-item.agency-issue {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.problem-card-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: var(--space-xl);
+  letter-spacing: var(--ls-tight);
+}
+
+/* Icons */
+.icon-bad {
+  color: #ff4d4f; /* Alert red */
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.icon-warning {
+  color: #faad14; /* Warning orange */
+  flex-shrink: 0;
+  margin-top: 2px;
+}

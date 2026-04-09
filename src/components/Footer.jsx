@@ -27,11 +27,10 @@ const Footer = () => {
             <h3 className="footer__nav-title">Company</h3>
             <ul className="footer__nav-list">
               <li><a href="#hero">Home</a></li>
-              <li><a href="#hero">About</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#outstaffing">Outstaffing</a></li>
-              <li><a href="#process">Process</a></li>
-              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#problem">Our Approach</a></li>
+              <li><a href="#use-cases">Use Cases</a></li>
+              <li><a href="#partners">Clients</a></li>
+              <li><a href="#inpage-contact">Contact</a></li>
             </ul>
           </div>
 

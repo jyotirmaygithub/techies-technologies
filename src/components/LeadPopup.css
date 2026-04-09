@@ -24,6 +24,7 @@
   animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   min-height: min(600px, 75vh);
   padding-bottom: 20px; /* Safety padding for scroll */
+  scrollbar-width: none;
 }
 
 @keyframes fadeIn {
@@ -304,10 +305,12 @@
     max-width: 500px;
   }
   .lead-popup-left {
-    border-right: none;
-    border-bottom: 1px solid var(--border-primary);
+    display: none;
   }
   .lead-form-row {
     flex-direction: column;
+  }
+  .lead-partner-badge {
+    display: none;
   }
 }

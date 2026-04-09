@@ -13,11 +13,10 @@ const Navbar = ({ onOpenPopup }) => {
   }, []);
 
   const navLinks = [
-    { label: 'About', href: '#features' }, // Maps to 'About Techies' / 'Problem'
-    { label: 'Services', href: '#services' },
-    { label: 'Process', href: '#process' },
-    { label: 'Testimonials', href: '#testimonials' },
-    { label: 'Contact', href: '#footer' },
+    { label: 'Our Approach', href: '#problem' },
+    { label: 'Use Cases', href: '#use-cases' },
+    { label: 'Clients', href: '#partners' },
+    { label: 'Contact', href: '#inpage-contact' },
   ];
 
   return (
@@ -40,7 +39,7 @@ const Navbar = ({ onOpenPopup }) => {
         {/* CTA */}
         <div className="navbar__actions">
           <a href="#footer" className="navbar__btn navbar__btn--ghost" id="nav-login">Global Presence</a>
-          <button onClick={onOpenPopup} className="navbar__btn navbar__btn--primary" id="nav-cta">Reach Out</button>
+          <button onClick={onOpenPopup} className="navbar__btn navbar__btn--primary" id="nav-cta">Contact Us</button>
         </div>
 
         {/* Mobile Toggle */}
@@ -69,7 +68,7 @@ const Navbar = ({ onOpenPopup }) => {
           </a>
         ))}
         <button onClick={onOpenPopup} className="navbar__btn navbar__btn--primary" style={{ width: '100%', textAlign: 'center', marginTop: '8px' }}>
-          Reach Out
+          Contact Us
         </button>
       </div>
     </nav>
