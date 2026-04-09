@@ -234,17 +234,18 @@
       "items": [
         {
           "country": "Georgia",
-          "address": "Bakhtrioni Street, N11, Apartment 132, Tbilisi"
+          "address": "Bakhtrioni Street, N 22, Apartment N75, Tbilisi",
+          "phone": "+995 555 915 915"
         },
         {
           "country": "USA",
-          "address": "30 North Gould Street Sheridan, Wyoming 82801",
-          "phone": "+1 (307) 222-6630"
+          "address": "30 North Gould Street, Sheridan, Wyoming, 82801",
+          "phone": "+1 840 688 8419"
         },
         {
           "country": "KSA",
-          "address": "Riyadh, Prince Moqrin Bin Abdulaziz St",
-          "phone": "+966 59 133 7644"
+          "address": "Reguis Offices, Narjis, Riyadh, 13336",
+          "phone": "+995 555 915 915"
         }
       ]
     },
@@ -290,13 +291,13 @@
       "contacts": [
         {
           "icon": "📞",
-          "label": "+995 555 91 59 15",
+          "label": "+995 555 915 915",
           "sub": "Georgia / KSA Support (Mon-Sat 9am-6pm)",
           "color": "blue"
         },
         {
           "icon": "💬",
-          "label": "+1 840 688 84 19",
+          "label": "+1 840 688 8419",
           "sub": "USA Support (Mon-Sat 9am-6pm)",
           "color": "green"
         },
