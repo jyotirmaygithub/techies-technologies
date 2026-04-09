@@ -14,6 +14,19 @@ const Footer = () => {
           <div className="footer__brand">
             <h2 className="footer__logo">{footer.logo}</h2>
             <p className="footer__mission">{footer.mission}</p>
+            <div className="footer__social">
+              {footer.socials.map((social, idx) => (
+                <a 
+                  key={idx} 
+                  href={social.href} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="footer__social-link"
+                >
+                  {social.label}
+                </a>
+              ))}
+            </div>
           </div>
 
           {/* Dynamic Nav Columns */}

@@ -171,8 +171,7 @@
     "title": "Stop Managing Work Manually. Start Running Systems.",
     "subtitle": "Scale your technology with confidence. Partner with Techies Technologies to launch innovative products and build reliable digital infrastructure.",
     "buttons": {
-      "primary": "Book Your Free Strategy Call",
-      "secondary": "contact@techies.co"
+      "primary": "Book Your Free Strategy Call"
     }
   },
   "footer": {
@@ -259,6 +258,20 @@
         "href": "#"
       }
     ],
+    "socials": [
+      {
+        "label": "X.",
+        "href": "https://x.com/TechiesTechHQ"
+      },
+      {
+        "label": "IG.",
+        "href": "https://www.instagram.com/techiestechhq/"
+      },
+      {
+        "label": "LI.",
+        "href": "https://www.linkedin.com/company/techies-technologies/"
+      }
+    ],
     "copyright": "Techies Technologies. All rights reserved."
   },
   "contactSidebar": {
@@ -286,12 +299,6 @@
           "label": "+1 840 688 84 19",
           "sub": "USA Support (Mon-Sat 9am-6pm)",
           "color": "green"
-        },
-        {
-          "icon": "📧",
-          "label": "contact@techies.co",
-          "sub": "Email Support",
-          "color": "blue"
         },
         {
           "icon": "📍",
@@ -380,9 +387,7 @@
         "projectLabel": "Project Details",
         "projectPlaceholder": "Tell us briefly about your idea...",
         "submitBtn": "Submit"
-      },
-      "footerNote": "If you are looking for a job, please send your CV to: ",
-      "hrEmail": "contact@techies.co"
+      }
     }
   }
 }
