@@ -2,50 +2,50 @@
    Partners Section
    ======================================== */
 
-   .partners-section {
-    padding-top: var(--space-4xl);
-    padding-bottom: var(--space-xl);
-    padding-left: var(--space-lg);
-    padding-right: var(--space-lg);
-    background-color: var(--bg-primary);
-    border-top: 1px solid var(--border-primary);
-  }
-  
-  .partners__container {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  
-  .partners__header {
-    text-align: center;
-    margin-bottom: var(--space-3xl);
-  }
-  
+.partners-section {
+  padding-top: var(--space-4xl);
+  padding-bottom: var(--space-5xl);
+  padding-left: var(--space-lg);
+  padding-right: var(--space-lg);
+  background-color: var(--bg-primary);
+  border-top: 1px solid var(--border-primary);
+}
+
+.partners__container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.partners__header {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+}
+
+.partners__logogrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-3xl);
+}
+
+.partner-logo {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.7;
+  transition: var(--transition-fast);
+}
+
+.partner-logo:hover {
+  opacity: 1;
+  color: var(--text-primary);
+}
+
+@media (max-width: 600px) {
   .partners__logogrid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: var(--space-3xl);
+    gap: var(--space-xl);
   }
-  
-  .partner-logo {
-    font-size: 1.25rem;
-    font-weight: 800;
-    color: var(--text-tertiary);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    opacity: 0.7;
-    transition: var(--transition-fast);
-  }
-  
-  .partner-logo:hover {
-    opacity: 1;
-    color: var(--text-primary);
-  }
-  
-  @media (max-width: 600px) {
-    .partners__logogrid {
-      gap: var(--space-xl);
-    }
-  }
+}
