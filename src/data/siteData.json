@@ -72,7 +72,7 @@
   "solution": {
     "sectionTag": "How We Work",
     "title": "We Don’t Just Build Software. We Build Business Systems.",
-    "subtitle": "Everything we create is designed around how your business actually works — not how templates are built.",
+    "subtitle": "Everything we create is designed around how your business actually works - not how templates are built.",
     "comparison": {
       "bad": {
         "title": "Typical Agencies",
@@ -159,8 +159,10 @@
       "namePlaceholder": "John Doe",
       "emailLabel": "Work Email",
       "emailPlaceholder": "john@company.com",
-      "projectLabel": "Project Details",
-      "projectPlaceholder": "Tell us a bit about what you're trying to build...",
+      "companyLabel": "Company Name",
+      "companyPlaceholder": "Company Name",
+      "phoneLabel": "Phone Number",
+      "phonePlaceholder": "Phone Number",
       "submitBtn": "Send Message",
       "submittingText": "Sending..."
     }
@@ -207,23 +209,23 @@
         "links": [
           {
             "label": "Managed Cloud",
-            "href": "#services"
+            "href": "https://techies.co/services"
           },
           {
             "label": "Product Dev",
-            "href": "#services"
+            "href": "https://techies.co/services"
           },
           {
             "label": "Cybersecurity",
-            "href": "#services"
+            "href": "https://techies.co/services"
           },
           {
             "label": "Consulting",
-            "href": "#services"
+            "href": "https://techies.co/services"
           },
           {
             "label": "MVP Build",
-            "href": "#services"
+            "href": "https://techies.co/services"
           }
         ]
       }
