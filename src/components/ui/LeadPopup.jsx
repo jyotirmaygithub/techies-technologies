@@ -127,9 +127,7 @@ const LeadPopup = ({ onClose }) => {
             <button type="submit" className="lead-submit-btn">{leadPopup.right.form.submitBtn}</button>
           </form>
 
-          <p className="lead-footer-note">
-            {leadPopup.right.footerNote} <strong>{leadPopup.right.hrEmail}</strong>
-          </p>
+
         </div>
       </div>
     </div>

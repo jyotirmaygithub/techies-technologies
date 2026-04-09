@@ -18,9 +18,15 @@ const CTA = ({ onOpenPopup }) => {
                 <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </button>
-            <button onClick={onOpenPopup} className="cta__btn cta__btn--secondary" id="cta-secondary">
-              {cta.buttons.secondary}
-            </button>
+            {cta.buttons.secondary && (
+              <button 
+                onClick={onOpenPopup} 
+                className="cta__btn cta__btn--secondary" 
+                id="cta-secondary"
+              >
+                {cta.buttons.secondary}
+              </button>
+            )}
           </div>
         </div>
       </div>
