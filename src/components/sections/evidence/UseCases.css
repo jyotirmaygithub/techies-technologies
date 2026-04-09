@@ -33,6 +33,7 @@
     border: 1px solid var(--border-primary);
     border-radius: var(--radius-lg);
     overflow: hidden;
+    cursor: pointer;
     transition: var(--transition-base);
     display: flex;
     flex-direction: column;

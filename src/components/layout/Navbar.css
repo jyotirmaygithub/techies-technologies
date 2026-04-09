@@ -105,6 +105,7 @@
   transition: var(--transition-fast);
   display: inline-flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .navbar__btn--ghost {
@@ -135,6 +136,7 @@
   gap: 5px;
   background: none;
   padding: var(--space-sm);
+  cursor: pointer;
 }
 
 .navbar__hamburger span {

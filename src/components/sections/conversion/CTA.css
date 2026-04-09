@@ -78,6 +78,7 @@
   font-weight: 600;
   padding: 14px 28px;
   border-radius: var(--radius-full);
+  cursor: pointer;
   transition: var(--transition-base);
 }
 

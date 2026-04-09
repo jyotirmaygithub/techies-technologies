@@ -117,6 +117,7 @@
   font-weight: 700;
   padding: 16px 36px;
   border-radius: var(--radius-sm); /* Sharper agency corners */
+  cursor: pointer;
   transition: var(--transition-base);
 }
 
