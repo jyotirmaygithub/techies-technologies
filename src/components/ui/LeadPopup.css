@@ -303,9 +303,18 @@
     max-height: 90vh;
     overflow-y: auto;
     max-width: 500px;
+    padding-bottom: var(--space-2xl); /* Add extra clearance at the bottom */
   }
   .lead-popup-left {
     display: none;
+  }
+  .lead-popup-right {
+    padding: var(--space-lg) var(--space-lg) var(--space-xl);
+    display: block; /* Ensure padding is respected in scroll */
+  }
+  .lead-submit-btn {
+    margin-bottom: var(--space-md);
+    width: 100%;
   }
   .lead-form-row {
     flex-direction: column;
