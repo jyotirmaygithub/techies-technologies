@@ -1,0 +1,275 @@
+{
+  "navbar": {
+    "alt": "Techies Technologies Logo",
+    "links": [
+      { "label": "Our Approach", "href": "#problem" },
+      { "label": "Use Cases", "href": "#use-cases" },
+      { "label": "Clients", "href": "#partners" },
+      { "label": "Contact", "href": "#inpage-contact" }
+    ],
+    "globalPresence": "Global Presence",
+    "contactBtn": "Contact Us"
+  },
+  "hero": {
+    "badge": "Techies Technologies",
+    "title": "Design. Develop. Scale.",
+    "subtitle": "We design and develop systems that streamline operations, reduce manual work, and help businesses scale.",
+    "buttons": {
+      "primary": "Book a Free Call",
+      "secondary": "Our Services"
+    }
+  },
+  "logoTicker": {
+    "label": "Industries We Work With",
+    "industries": [
+      "Healthcare",
+      "Travel",
+      "Logistics",
+      "Media",
+      "Marketplace",
+      "Real Estate",
+      "Wellness & Sport",
+      "AI / IoT",
+      "Terminal & POS",
+      "Finance"
+    ]
+  },
+  "problem": {
+    "sectionTag": "The Reality",
+    "title": "Your Business Is Growing - But Your Systems Aren’t.",
+    "subtitle": "And most development agencies won’t fix that.",
+    "businessProblems": {
+      "title": "Business Issues You Face",
+      "items": [
+        "Too many manual processes",
+        "Teams using disconnected tools",
+        "Time wasted on repetitive work",
+        "No centralized system"
+      ]
+    },
+    "agencyFailures": {
+      "title": "Where Most Agencies Go Wrong",
+      "items": [
+        "Focus only on building, not understanding",
+        "Deliver generic solutions",
+        "No business thinking behind development",
+        "Once delivered → no ownership"
+      ]
+    }
+  },
+  "solution": {
+    "sectionTag": "How We Work",
+    "title": "We Don’t Just Build Software. We Build Business Systems.",
+    "subtitle": "Everything we create is designed around how your business actually works — not how templates are built.",
+    "comparison": {
+      "bad": {
+        "title": "Typical Agencies",
+        "items": ["Build what you ask", "Generic solutions", "Focus on delivery", "One-time projects"]
+      },
+      "good": {
+        "title": "Techies Technologies",
+        "items": ["Understand what you actually need", "Fully custom systems", "Focus on business outcomes", "Long-term thinking"]
+      }
+    }
+  },
+  "stats": {
+    "sectionTag": "By The Numbers",
+    "title": "A Proven Track Record.",
+    "data": [
+      {
+        "number": "10",
+        "title": "Years in the market.",
+        "description": "A decade of building brands, launching products, and shipping clean, conversion-focused design."
+      },
+      {
+        "number": "120+",
+        "title": "Happy clients.",
+        "description": "Long-term partnerships, repeat business, and glowing testimonials fuel our commitment to excellence."
+      },
+      {
+        "number": "$10M+",
+        "title": "Raised for clients.",
+        "description": "Our work helped founders secure funding — from pre-seed to Series A and beyond."
+      },
+      {
+        "number": "190+",
+        "title": "Completed projects.",
+        "description": "Funding won through work delivered on time, on brand, and with intent."
+      }
+    ]
+  },
+  "useCases": {
+    "sectionTag": "Use Cases",
+    "title": "What We Can Build For You",
+    "items": [
+      { "title": "Custom CRM" },
+      { "title": "Internal dashboards" },
+      { "title": "Automation systems" },
+      { "title": "SaaS platforms" }
+    ]
+  },
+  "partners": {
+    "sectionTag": "Trusted By",
+    "title": "Companies that scale with us",
+    "names": [
+      "TechCorp",
+      "GlobalBank",
+      "RetailPro",
+      "HealthSync",
+      "LogisTech",
+      "MediaPlus"
+    ]
+  },
+  "contact": {
+    "sectionTag": "Get In Touch",
+    "title": "Start your next project.",
+    "subtitle": "Fill out the form below and our team will get back to you within 24 hours.",
+    "form": {
+      "nameLabel": "Full Name",
+      "namePlaceholder": "John Doe",
+      "emailLabel": "Work Email",
+      "emailPlaceholder": "john@company.com",
+      "projectLabel": "Project Details",
+      "projectPlaceholder": "Tell us a bit about what you're trying to build...",
+      "submitBtn": "Send Message",
+      "submittingText": "Sending..."
+    }
+  },
+  "cta": {
+    "title": "Stop Managing Work Manually. Start Running Systems.",
+    "subtitle": "Scale your technology with confidence. Partner with Techies Technologies to launch innovative products and build reliable digital infrastructure.",
+    "buttons": {
+      "primary": "Book Your Free Strategy Call",
+      "secondary": "contact@techies.co"
+    }
+  },
+  "footer": {
+    "logo": "Techies",
+    "mission": "Build. Launch. Manage. We are a team of visionary thinkers and skilled creators committed to supporting business enthusiasts globally.",
+    "columns": [
+      {
+        "title": "Company",
+        "links": [
+          { "label": "Home", "href": "#hero" },
+          { "label": "Our Approach", "href": "#problem" },
+          { "label": "Use Cases", "href": "#use-cases" },
+          { "label": "Clients", "href": "#partners" },
+          { "label": "Contact", "href": "#inpage-contact" }
+        ]
+      },
+      {
+        "title": "Services",
+        "links": [
+          { "label": "Managed Cloud", "href": "#services" },
+          { "label": "Product Dev", "href": "#services" },
+          { "label": "Cybersecurity", "href": "#services" },
+          { "label": "Consulting", "href": "#services" },
+          { "label": "MVP Build", "href": "#services" }
+        ]
+      }
+    ],
+    "offices": {
+      "title": "Offices",
+      "items": [
+        { "country": "Georgia", "address": "Bakhtrioni Street, N11, Apartment 132, Tbilisi" },
+        { "country": "USA", "address": "30 North Gould Street Sheridan, Wyoming 82801", "phone": "+1 (307) 222-6630" },
+        { "country": "KSA", "address": "Riyadh, Prince Moqrin Bin Abdulaziz St", "phone": "+966 59 133 7644" }
+      ]
+    },
+    "legal": [
+      { "label": "Privacy Policy", "href": "#" },
+      { "label": "Terms of Service", "href": "#" }
+    ],
+    "copyright": "Techies Technologies. All rights reserved."
+  },
+  "contactSidebar": {
+    "header": "Request A Quote",
+    "form": {
+      "namePlaceholder": "Enter name",
+      "emailPlaceholder": "Enter email",
+      "companyPlaceholder": "Enter company",
+      "mobilePlaceholder": "Enter mobile",
+      "messagePlaceholder": "Enter your message",
+      "submitBtn": "Submit"
+    },
+    "getInTouch": {
+      "title": "Get In Touch",
+      "description": "Please fill out the form below if you have a plan or project in mind that you'd like to share with us.",
+      "contacts": [
+        {
+          "icon": "📞",
+          "label": "+995 555 91 59 15",
+          "sub": "Georgia / KSA Support (Mon-Sat 9am-6pm)",
+          "color": "blue"
+        },
+        {
+          "icon": "💬",
+          "label": "+1 840 688 84 19",
+          "sub": "USA Support (Mon-Sat 9am-6pm)",
+          "color": "green"
+        },
+        {
+          "icon": "📧",
+          "label": "contact@techies.co",
+          "sub": "Email Support",
+          "color": "blue"
+        },
+        {
+          "icon": "📍",
+          "label": "Global Offices",
+          "sub": "Georgia, USA, and KSA (Riyadh)"
+        }
+      ]
+    }
+  },
+  "leadPopup": {
+    "left": {
+      "tag": "WHY BRANDS CHOOSE TECHIES",
+      "title": "Techies is Not Only an Idea But a Dream to Meet Business Needs.",
+      "locations": [
+        { "code": "GE", "name": "Georgia" },
+        { "code": "US", "name": "USA" },
+        { "code": "SA", "name": "KSA" }
+      ],
+      "testimonial": {
+        "quote": "Techies helped us turn a complex operations workflow into a simple, automated system. The team was responsive, detail-oriented, and delivered on time.",
+        "author": "Jordan Peterson",
+        "role": "COO, Kuts",
+        "initials": "JP"
+      },
+      "clientsLabel": "SELECTED CLIENTS WE WORK WITH",
+      "clients": ["lit", "colo", "Mashfa"]
+    },
+    "right": {
+      "badge": { "title": "Trusted", "strong": "Technology Partner" },
+      "header": "Let's Talk About Your Project",
+      "subheader": "Share a few details and our team will get back within 24 hours.",
+      "form": {
+        "nameLabel": "Full Name*",
+        "namePlaceholder": "John Doe",
+        "emailLabel": "Email*",
+        "emailPlaceholder": "john@example.com",
+        "companyLabel": "Company Name",
+        "companyPlaceholder": "Your company name",
+        "countryLabel": "Country",
+        "countryPlaceholder": "e.g. USA, KSA",
+        "phoneLabel": "Contact Number*",
+        "phonePlaceholder": "+1 234...",
+        "servicesLabel": "Services",
+        "services": [
+          { "value": "", "label": "Select a service" },
+          { "value": "managed", "label": "Managed Services" },
+          { "value": "data", "label": "Data & Analytics" },
+          { "value": "mvp", "label": "MVP Development" },
+          { "value": "consulting", "label": "Technology Consulting" },
+          { "value": "outsourcing", "label": "Outsourcing" }
+        ],
+        "projectLabel": "Project Details",
+        "projectPlaceholder": "Tell us briefly about your idea...",
+        "submitBtn": "Submit"
+      },
+      "footerNote": "If you are looking for a job, please send your CV to: ",
+      "hrEmail": "contact@techies.co"
+    }
+  }
+}

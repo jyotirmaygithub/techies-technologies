@@ -1,31 +1,20 @@
 import React from 'react';
 import { X, Check } from 'lucide-react';
 import './Solution.css';
+import siteData from '../../../data/siteData.json';
 
 const Solution = () => {
-  const badPractices = [
-    "Build what you ask",
-    "Generic solutions",
-    "Focus on delivery",
-    "One-time projects"
-  ];
-
-  const goodPractices = [
-    "Understand what you actually need",
-    "Fully custom systems",
-    "Focus on business outcomes",
-    "Long-term thinking"
-  ];
+  const { solution } = siteData;
 
   return (
     <section className="solution-section section" id="solution">
       <div className="solution__container">
         
         <div className="solution__header">
-          <span className="section-tag">How We Work</span>
-          <h2 className="section-title">We Don’t Just Build Software. We Build Business Systems.</h2>
+          <span className="section-tag">{solution.sectionTag}</span>
+          <h2 className="section-title">{solution.title}</h2>
           <p className="section-subtitle">
-            Everything we create is designed around how your business actually works — not how templates are built.
+            {solution.subtitle}
           </p>
         </div>
 
@@ -34,10 +23,10 @@ const Solution = () => {
           {/* Left Column: Typical Agencies */}
           <div className="comparison-col comparison-col--bad">
             <h3 className="comparison-title comparison-title--bad">
-              Typical Agencies
+              {solution.comparison.bad.title}
             </h3>
             <ul className="comparison-list">
-              {badPractices.map((practice, index) => (
+              {solution.comparison.bad.items.map((practice, index) => (
                 <li key={index} className="comparison-item comparison-item--bad">
                   <X className="comparison-icon icon-cross" size={24} strokeWidth={2.5} />
                   <span>{practice}</span>
@@ -49,10 +38,10 @@ const Solution = () => {
           {/* Right Column: Techies */}
           <div className="comparison-col comparison-col--good">
             <h3 className="comparison-title comparison-title--good">
-              Techies Technologies
+              {solution.comparison.good.title}
             </h3>
             <ul className="comparison-list">
-              {goodPractices.map((practice, index) => (
+              {solution.comparison.good.items.map((practice, index) => (
                 <li key={index} className="comparison-item comparison-item--good">
                   <Check className="comparison-icon icon-check" size={24} strokeWidth={3} />
                   <span>{practice}</span>

@@ -1,43 +1,34 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import './UseCases.css';
+import siteData from '../../../data/siteData.json';
 
-import crmImg from '../assets/crm.jpg';
-import dashboardImg from '../assets/dashboard.jpg';
-import automationImg from '../assets/automation.jpg';
-import saas from '../assets/saas1.jpg';
-
-const useCasesData = [
-  {
-    title: "Custom CRM",
-    image: crmImg
-  },
-  {
-    title: "Internal dashboards",
-    image: dashboardImg
-  },
-  {
-    title: "Automation systems",
-    image: automationImg
-  },
-  {
-    title: "SaaS platforms",
-    image: saas
-  }
-];
+import crmImg from '../../../assets/crm.jpg';
+import dashboardImg from '../../../assets/dashboard.jpg';
+import automationImg from '../../../assets/automation.jpg';
+import saas from '../../../assets/saas.jpg';
 
 const UseCases = () => {
+  const { useCases } = siteData;
+
+  // Re-map images to JSON data (keeping images local as requested)
+  const images = [crmImg, dashboardImg, automationImg, saas];
+  const useCaseItems = useCases.items.map((item, index) => ({
+    ...item,
+    image: images[index]
+  }));
+
   return (
     <section className="use-cases-section section" id="use-cases">
       <div className="use-cases__container">
 
         <div className="use-cases__header">
-          <span className="section-tag">Use Cases</span>
-          <h2 className="section-title">What We Can Build For You</h2>
+          <span className="section-tag">{useCases.sectionTag}</span>
+          <h2 className="section-title">{useCases.title}</h2>
         </div>
 
         <div className="use-cases__grid">
-          {useCasesData.map((useCase, index) => (
+          {useCaseItems.map((useCase, index) => (
             <div key={index} className="use-case-card">
               <div className="use-case-card__image-container">
                 {useCase.image ? (

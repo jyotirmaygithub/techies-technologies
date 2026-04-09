@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import LogoTicker from './components/LogoTicker';
-import Problem from './components/Problem';
-import Solution from './components/Solution';
-import Stats from './components/Stats';
-import UseCases from './components/UseCases';
-import Partners from './components/Partners';
-import Contact from './components/Contact';
-import CTA from './components/CTA';
-import Footer from './components/Footer';
-import LeadPopup from './components/LeadPopup';
-import ContactSidebar from './components/ContactSidebar';
-import WhatsAppButton from './components/WhatsAppButton';
+import Navbar from './components/layout/Navbar';
+import Hero from './components/sections/core/Hero';
+import LogoTicker from './components/ui/LogoTicker';
+import Problem from './components/sections/core/Problem';
+import Solution from './components/sections/core/Solution';
+import Stats from './components/sections/core/Stats';
+import UseCases from './components/sections/evidence/UseCases';
+import Partners from './components/sections/evidence/Partners';
+import Contact from './components/sections/conversion/Contact';
+import CTA from './components/sections/conversion/CTA';
+import Footer from './components/layout/Footer';
+import LeadPopup from './components/ui/LeadPopup';
+import ContactSidebar from './components/ui/ContactSidebar';
+import WhatsAppButton from './components/ui/WhatsAppButton';
 
 function App() {
   const [showPopup, setShowPopup] = useState(false);

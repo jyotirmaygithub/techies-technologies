@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { SendHorizontal } from 'lucide-react';
 import './Contact.css';
+import siteData from '../../../data/siteData.json';
 
 const Contact = () => {
+  const { contact } = siteData;
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = (e) => {
@@ -21,10 +23,10 @@ const Contact = () => {
         
         <div className="contact__content">
           <div className="contact__header">
-            <span className="section-tag">Get In Touch</span>
-            <h2 className="section-title">Start your next project.</h2>
+            <span className="section-tag">{contact.sectionTag}</span>
+            <h2 className="section-title">{contact.title}</h2>
             <p className="section-subtitle">
-              Fill out the form below and our team will get back to you within 24 hours.
+              {contact.subtitle}
             </p>
           </div>
         </div>
@@ -33,28 +35,28 @@ const Contact = () => {
           <form onSubmit={handleSubmit} className="contact-form">
             <div className="contact-form-row">
               <div className="contact-input-group">
-                <label htmlFor="name">Full Name</label>
-                <input type="text" id="name" className="contact-input" placeholder="John Doe" required />
+                <label htmlFor="name">{contact.form.nameLabel}</label>
+                <input type="text" id="name" className="contact-input" placeholder={contact.form.namePlaceholder} required />
               </div>
               <div className="contact-input-group">
-                <label htmlFor="email">Work Email</label>
-                <input type="email" id="email" className="contact-input" placeholder="john@company.com" required />
+                <label htmlFor="email">{contact.form.emailLabel}</label>
+                <input type="email" id="email" className="contact-input" placeholder={contact.form.emailPlaceholder} required />
               </div>
             </div>
 
             <div className="contact-input-group">
-              <label htmlFor="details">Project Details</label>
+              <label htmlFor="details">{contact.form.projectLabel}</label>
               <textarea 
                 id="details" 
                 className="contact-input" 
                 rows="4" 
-                placeholder="Tell us a bit about what you're trying to build..."
+                placeholder={contact.form.projectPlaceholder}
                 required
               ></textarea>
             </div>
 
             <button type="submit" className="contact-btn" disabled={isSubmitting}>
-              <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
+              <span>{isSubmitting ? contact.form.submittingText : contact.form.submitBtn}</span>
               {!isSubmitting && <SendHorizontal size={20} />}
             </button>
           </form>

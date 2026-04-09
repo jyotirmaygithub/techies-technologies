@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import './ContactSidebar.css';
+import siteData from '../../data/siteData.json';
 
 const ContactSidebar = ({ isOpen, onClose }) => {
+  const { contactSidebar } = siteData;
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -34,7 +36,7 @@ const ContactSidebar = ({ isOpen, onClose }) => {
         <div className="sidebar-content">
           {/* Header */}
           <div className="sidebar-header">
-            <h2>Request A Quote</h2>
+            <h2>{contactSidebar.header}</h2>
           </div>
 
           {/* Form Section */}
@@ -43,7 +45,7 @@ const ContactSidebar = ({ isOpen, onClose }) => {
               <input 
                 type="text" 
                 name="name" 
-                placeholder="Enter name" 
+                placeholder={contactSidebar.form.namePlaceholder} 
                 required 
                 value={formData.name} 
                 onChange={handleChange} 
@@ -53,7 +55,7 @@ const ContactSidebar = ({ isOpen, onClose }) => {
               <input 
                 type="email" 
                 name="email" 
-                placeholder="Enter email" 
+                placeholder={contactSidebar.form.emailPlaceholder} 
                 required 
                 value={formData.email} 
                 onChange={handleChange} 
@@ -63,7 +65,7 @@ const ContactSidebar = ({ isOpen, onClose }) => {
               <input 
                 type="text" 
                 name="company" 
-                placeholder="Enter company" 
+                placeholder={contactSidebar.form.companyPlaceholder} 
                 value={formData.company} 
                 onChange={handleChange} 
               />
@@ -72,7 +74,7 @@ const ContactSidebar = ({ isOpen, onClose }) => {
               <input 
                 type="tel" 
                 name="mobile" 
-                placeholder="Enter mobile" 
+                placeholder={contactSidebar.form.mobilePlaceholder} 
                 required 
                 value={formData.mobile} 
                 onChange={handleChange} 
@@ -81,52 +83,30 @@ const ContactSidebar = ({ isOpen, onClose }) => {
             <div className="sidebar-field">
               <textarea 
                 name="message" 
-                placeholder="Enter your message" 
+                placeholder={contactSidebar.form.messagePlaceholder} 
                 rows="4" 
                 value={formData.message} 
                 onChange={handleChange}
               ></textarea>
             </div>
-            <button type="submit" className="sidebar-submit-btn">Submit</button>
+            <button type="submit" className="sidebar-submit-btn">{contactSidebar.form.submitBtn}</button>
           </form>
 
           {/* Contact Details Section */}
           <div className="sidebar-get-in-touch">
-            <h3>Get In Touch</h3>
-            <p className="sidebar-touch-desc">Please fill out the form below if you have a plan or project in mind that you'd like to share with us.</p>
+            <h3>{contactSidebar.getInTouch.title}</h3>
+            <p className="sidebar-touch-desc">{contactSidebar.getInTouch.description}</p>
             
             <div className="sidebar-contact-list">
-              <div className="sidebar-contact-item">
-                <div className="sidebar-contact-icon sidebar-contact-icon--blue">📞</div>
-                <div>
-                  <strong>+995 555 91 59 15</strong>
-                  <span>Georgia / KSA Support (Mon-Sat 9am-6pm)</span>
+              {contactSidebar.getInTouch.contacts.map((contact, idx) => (
+                <div key={idx} className="sidebar-contact-item">
+                  <div className={`sidebar-contact-icon ${contact.color ? `sidebar-contact-icon--${contact.color}` : ''}`}>{contact.icon}</div>
+                  <div>
+                    <strong>{contact.label}</strong>
+                    <span>{contact.sub}</span>
+                  </div>
                 </div>
-              </div>
-
-              <div className="sidebar-contact-item">
-                <div className="sidebar-contact-icon sidebar-contact-icon--green">💬</div>
-                <div>
-                  <strong>+1 840 688 84 19</strong>
-                  <span>USA Support (Mon-Sat 9am-6pm)</span>
-                </div>
-              </div>
-
-              <div className="sidebar-contact-item">
-                <div className="sidebar-contact-icon sidebar-contact-icon--blue">📧</div>
-                <div>
-                  <strong>contact@techies.co</strong>
-                  <span>Email Support</span>
-                </div>
-              </div>
-
-              <div className="sidebar-contact-item">
-                <div className="sidebar-contact-icon">📍</div>
-                <div>
-                  <strong>Global Offices</strong>
-                  <span>Georgia, USA, and KSA (Riyadh)</span>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
