@@ -20,7 +20,7 @@ const Contact = () => {
   return (
     <section className="contact-section" id="inpage-contact">
       <div className="contact__container">
-        
+
         <div className="contact__content">
           <div className="contact__header">
             <span className="section-tag">{contact.sectionTag}</span>
@@ -44,7 +44,18 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="contact-input-group">
+            <div className="contact-form-row">
+              <div className="contact-input-group">
+                <label htmlFor="company name">{contact.form.companyLabel}</label>
+                <input type="text" id="company name" className="contact-input" placeholder={contact.form.companyPlaceholder} required />
+              </div>
+              <div className="contact-input-group">
+                <label htmlFor="phone number">{contact.form.phoneLabel}</label>
+                <input type="number" id="phone number" className="contact-input" placeholder={contact.form.phonePlaceholder} required />
+              </div>
+            </div>
+
+            {/* <div className="contact-input-group">
               <label htmlFor="details">{contact.form.projectLabel}</label>
               <textarea 
                 id="details" 
@@ -53,7 +64,7 @@ const Contact = () => {
                 placeholder={contact.form.projectPlaceholder}
                 required
               ></textarea>
-            </div>
+            </div> */}
 
             <button type="submit" className="contact-btn" disabled={isSubmitting}>
               <span>{isSubmitting ? contact.form.submittingText : contact.form.submitBtn}</span>

@@ -98,6 +98,7 @@
   line-height: 1.6;
   color: var(--text-secondary);
   max-width: 640px;
+  margin-inline: auto;
   margin-bottom: var(--space-3xl);
   animation: fadeInUp 0.8s ease-out 0.4s both;
 }

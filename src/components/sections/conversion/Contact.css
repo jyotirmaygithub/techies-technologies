@@ -4,7 +4,7 @@
 
 .contact-section {
   padding-top: var(--space-4xl);
-  padding-bottom: var(--space-4xl);
+  padding-bottom: var(--space-5xl);
   padding-left: var(--space-lg);
   padding-right: var(--space-lg);
   background-color: #000; /* Dark background as requested */
@@ -59,6 +59,7 @@
   color: #a1a1aa; /* Light gray text */
   font-size: 1.125rem;
   line-height: 1.6;
+  margin-left: 0;
 }
 
 .contact__form-wrapper {
