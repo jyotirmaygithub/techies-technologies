@@ -10,7 +10,7 @@ const Partners = () => {
       <div className="partners__container">
         <div className="partners__header">
           <span className="section-tag">{partners.sectionTag}</span>
-          <h2 className="section-title" style={{ fontSize: '2rem' }}>{partners.title}</h2>
+          <h2 className="section-title">{partners.title}</h2>
         </div>
         <div className="partners__logogrid">
           {partners.names.map((logo, index) => (

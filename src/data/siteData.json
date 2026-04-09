@@ -2,10 +2,22 @@
   "navbar": {
     "alt": "Techies Technologies Logo",
     "links": [
-      { "label": "Our Approach", "href": "#problem" },
-      { "label": "Use Cases", "href": "#use-cases" },
-      { "label": "Clients", "href": "#partners" },
-      { "label": "Contact", "href": "#inpage-contact" }
+      {
+        "label": "Our Approach",
+        "href": "#problem"
+      },
+      {
+        "label": "Use Cases",
+        "href": "#use-cases"
+      },
+      {
+        "label": "Clients",
+        "href": "#partners"
+      },
+      {
+        "label": "Contact",
+        "href": "#inpage-contact"
+      }
     ],
     "globalPresence": "Global Presence",
     "contactBtn": "Contact Us"
@@ -64,11 +76,21 @@
     "comparison": {
       "bad": {
         "title": "Typical Agencies",
-        "items": ["Build what you ask", "Generic solutions", "Focus on delivery", "One-time projects"]
+        "items": [
+          "Build what you ask",
+          "Generic solutions",
+          "Focus on delivery",
+          "One-time projects"
+        ]
       },
       "good": {
         "title": "Techies Technologies",
-        "items": ["Understand what you actually need", "Fully custom systems", "Focus on business outcomes", "Long-term thinking"]
+        "items": [
+          "Understand what you actually need",
+          "Fully custom systems",
+          "Focus on business outcomes",
+          "Long-term thinking"
+        ]
       }
     }
   },
@@ -102,15 +124,23 @@
     "sectionTag": "Use Cases",
     "title": "What We Can Build For You",
     "items": [
-      { "title": "Custom CRM" },
-      { "title": "Internal dashboards" },
-      { "title": "Automation systems" },
-      { "title": "SaaS platforms" }
+      {
+        "title": "Custom CRM"
+      },
+      {
+        "title": "Internal dashboards"
+      },
+      {
+        "title": "Automation systems"
+      },
+      {
+        "title": "SaaS platforms"
+      }
     ]
   },
   "partners": {
     "sectionTag": "Trusted By",
-    "title": "Companies that scale with us",
+    "title": "Companies That Scale With Us",
     "names": [
       "TechCorp",
       "GlobalBank",
@@ -150,35 +180,82 @@
       {
         "title": "Company",
         "links": [
-          { "label": "Home", "href": "#hero" },
-          { "label": "Our Approach", "href": "#problem" },
-          { "label": "Use Cases", "href": "#use-cases" },
-          { "label": "Clients", "href": "#partners" },
-          { "label": "Contact", "href": "#inpage-contact" }
+          {
+            "label": "Home",
+            "href": "#hero"
+          },
+          {
+            "label": "Our Approach",
+            "href": "#problem"
+          },
+          {
+            "label": "Use Cases",
+            "href": "#use-cases"
+          },
+          {
+            "label": "Clients",
+            "href": "#partners"
+          },
+          {
+            "label": "Contact",
+            "href": "#inpage-contact"
+          }
         ]
       },
       {
         "title": "Services",
         "links": [
-          { "label": "Managed Cloud", "href": "#services" },
-          { "label": "Product Dev", "href": "#services" },
-          { "label": "Cybersecurity", "href": "#services" },
-          { "label": "Consulting", "href": "#services" },
-          { "label": "MVP Build", "href": "#services" }
+          {
+            "label": "Managed Cloud",
+            "href": "#services"
+          },
+          {
+            "label": "Product Dev",
+            "href": "#services"
+          },
+          {
+            "label": "Cybersecurity",
+            "href": "#services"
+          },
+          {
+            "label": "Consulting",
+            "href": "#services"
+          },
+          {
+            "label": "MVP Build",
+            "href": "#services"
+          }
         ]
       }
     ],
     "offices": {
       "title": "Offices",
       "items": [
-        { "country": "Georgia", "address": "Bakhtrioni Street, N11, Apartment 132, Tbilisi" },
-        { "country": "USA", "address": "30 North Gould Street Sheridan, Wyoming 82801", "phone": "+1 (307) 222-6630" },
-        { "country": "KSA", "address": "Riyadh, Prince Moqrin Bin Abdulaziz St", "phone": "+966 59 133 7644" }
+        {
+          "country": "Georgia",
+          "address": "Bakhtrioni Street, N11, Apartment 132, Tbilisi"
+        },
+        {
+          "country": "USA",
+          "address": "30 North Gould Street Sheridan, Wyoming 82801",
+          "phone": "+1 (307) 222-6630"
+        },
+        {
+          "country": "KSA",
+          "address": "Riyadh, Prince Moqrin Bin Abdulaziz St",
+          "phone": "+966 59 133 7644"
+        }
       ]
     },
     "legal": [
-      { "label": "Privacy Policy", "href": "#" },
-      { "label": "Terms of Service", "href": "#" }
+      {
+        "label": "Privacy Policy",
+        "href": "#"
+      },
+      {
+        "label": "Terms of Service",
+        "href": "#"
+      }
     ],
     "copyright": "Techies Technologies. All rights reserved."
   },
@@ -227,9 +304,18 @@
       "tag": "WHY BRANDS CHOOSE TECHIES",
       "title": "Techies is Not Only an Idea But a Dream to Meet Business Needs.",
       "locations": [
-        { "code": "GE", "name": "Georgia" },
-        { "code": "US", "name": "USA" },
-        { "code": "SA", "name": "KSA" }
+        {
+          "code": "GE",
+          "name": "Georgia"
+        },
+        {
+          "code": "US",
+          "name": "USA"
+        },
+        {
+          "code": "SA",
+          "name": "KSA"
+        }
       ],
       "testimonial": {
         "quote": "Techies helped us turn a complex operations workflow into a simple, automated system. The team was responsive, detail-oriented, and delivered on time.",
@@ -238,10 +324,17 @@
         "initials": "JP"
       },
       "clientsLabel": "SELECTED CLIENTS WE WORK WITH",
-      "clients": ["lit", "colo", "Mashfa"]
+      "clients": [
+        "lit",
+        "colo",
+        "Mashfa"
+      ]
     },
     "right": {
-      "badge": { "title": "Trusted", "strong": "Technology Partner" },
+      "badge": {
+        "title": "Trusted",
+        "strong": "Technology Partner"
+      },
       "header": "Let's Talk About Your Project",
       "subheader": "Share a few details and our team will get back within 24 hours.",
       "form": {
@@ -257,12 +350,30 @@
         "phonePlaceholder": "+1 234...",
         "servicesLabel": "Services",
         "services": [
-          { "value": "", "label": "Select a service" },
-          { "value": "managed", "label": "Managed Services" },
-          { "value": "data", "label": "Data & Analytics" },
-          { "value": "mvp", "label": "MVP Development" },
-          { "value": "consulting", "label": "Technology Consulting" },
-          { "value": "outsourcing", "label": "Outsourcing" }
+          {
+            "value": "",
+            "label": "Select a service"
+          },
+          {
+            "value": "managed",
+            "label": "Managed Services"
+          },
+          {
+            "value": "data",
+            "label": "Data & Analytics"
+          },
+          {
+            "value": "mvp",
+            "label": "MVP Development"
+          },
+          {
+            "value": "consulting",
+            "label": "Technology Consulting"
+          },
+          {
+            "value": "outsourcing",
+            "label": "Outsourcing"
+          }
         ],
         "projectLabel": "Project Details",
         "projectPlaceholder": "Tell us briefly about your idea...",
