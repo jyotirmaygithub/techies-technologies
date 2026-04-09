@@ -22,7 +22,15 @@ const Footer = () => {
               <h3 className="footer__nav-title">{column.title}</h3>
               <ul className="footer__nav-list">
                 {column.links.map((link, lIdx) => (
-                  <li key={lIdx}><a href={link.href}>{link.label}</a></li>
+                  <li key={lIdx}>
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {link.label}
+                    </a>
+                  </li>
                 ))}
               </ul>
             </div>
